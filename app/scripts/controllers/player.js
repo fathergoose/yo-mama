@@ -8,10 +8,11 @@
  * Controller of the yoMamaApp
  */
 angular.module('yoMamaApp')
-  .controller('PlayerCtrl', function () {
+  .controller('PlayerCtrl',[ '$scope', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+    $scope.test = "I understand something";
+  }]);

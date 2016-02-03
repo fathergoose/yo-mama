@@ -31,7 +31,7 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('//player', {
+      .when('/player', {
         templateUrl: 'views/player.html',
         controller: 'PlayerCtrl',
         controllerAs: 'player'
