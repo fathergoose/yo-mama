@@ -15,8 +15,4 @@ describe('Service: audio', function () {
     expect(!!audio).toBe(true);
   });
 
-  it('should create and return an HTML5 audio element', function () {
-    expect(audio.nodeName).toBe('AUDIO');
-  });
-
 });
