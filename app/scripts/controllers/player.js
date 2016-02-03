@@ -8,11 +8,12 @@
  * Controller of the yoMamaApp
  */
 angular.module('yoMamaApp')
-  .controller('PlayerCtrl',[ '$scope', function ($scope) {
+  .controller('PlayerCtrl',function ($scope, ngAudio) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
     $scope.test = "I understand something";
-  }]);
+    $scope.audio = ngAudio.load('every_other_freckle.mp3');
+  });

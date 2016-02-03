@@ -1,5 +1,10 @@
 <p>This is the player view.</p>
-<div ng-controller="PlayerCtrl">
 {{test}}
+<button ng-click='audio.paused ? audio.play() : audio.pause()'>Pause</button>
+<button ng-click='audio.restart()'>Stop</button>
+<button ng-click='audio.muting = !audio.muting'>Mute</button>
 
-</div>
+<label>Current Time</label>
+<input class='form-control' type=text ng-model='audio.currentTime'>
+<label>Volume</label>
+<input class='form-control' type=range min=0 max=1 step=0.01 ng-model='audio.volume'>
