@@ -12,7 +12,13 @@ angular.module('yoMamaApp')
     // Service logic
     // ...
 
+
     var playlist = {
+
+      nowPlaying: function() {
+        var nowPlaying = playlist.tracks[0].url;
+        return nowPlaying;
+      },
 
       tracks: [
         {
@@ -30,6 +36,7 @@ angular.module('yoMamaApp')
         console.log('NEXT');
         }
       };
+
 
     return playlist
   });
